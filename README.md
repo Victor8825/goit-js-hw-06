@@ -7,8 +7,6 @@ Task 1:
 Для каждого элемента li.item в списке ul#categories, найдет и выведет в консоль текст заголовка элемента (тега <h2>) и количество элементов в категории (всех вложенных в него <li>).
 В результате, в консоли будут выведены такие сообщения.
 
-- обратиться к li.item , посчитать и вывести в консоль 
-
 Number of categories: 3
 
 Category: Animals
@@ -31,6 +29,8 @@ Elements: 5
     </ul>
   </li>
   <li class="item">
+    <h2>Products</h2>
+    <ul>
       <li>Bread</li>
       <li>Prasley</li>
       <li>Cheese</li>
