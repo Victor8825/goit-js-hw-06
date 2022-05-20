@@ -12,3 +12,9 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+function createGalleryMarkup (images) {
+  return images.map(({url, alt}) => `<li><img src="${url}" alt="${alt}"></li>`);
+}
+console.log(typeOF(createGalleryMarkup(images)));
+
