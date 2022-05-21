@@ -13,8 +13,12 @@ const images = [
   },
 ];
 
-function createGalleryMarkup (images) {
-  return images.map(({url, alt}) => `<li><img src="${url}" alt="${alt}"></li>`);
+const galleryEL = document.querySelector(".gallery");
+const createGalleryMarkup = (images) => {
+  return images.map(({url, alt}) => `<li><img src="${url}" alt="${alt}" width=200 height=150></li>`).join("");
 }
-console.log(typeOF(createGalleryMarkup(images)));
+
+galleryEL.insertAdjacentHTML('afterbegin', createGalleryMarkup(images));
+
+
 
