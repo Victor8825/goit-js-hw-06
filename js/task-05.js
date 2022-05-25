@@ -10,6 +10,6 @@ function onOutputChange(event) {
     nameOutputEl = 'Anonymous';
   }
   else {
-    nameOutputEl.textContent   = event.currentTarget.value; 
+    nameOutputEl.textContent = event.currentTarget.value; 
   }
 }
